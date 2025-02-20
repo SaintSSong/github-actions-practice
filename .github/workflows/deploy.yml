@@ -7,8 +7,9 @@ on:
 
 jobs:
   My-Deploy-Job:
+    # ubuntu 환경에서 가장 최신 버전(latest)
     runs-on: ubuntu - latest
 
     steps:
       - name: Hello World 찍기
-        run: echo "Hello World"
+        run: echo "Hello World!!!"
