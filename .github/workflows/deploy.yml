@@ -10,6 +10,14 @@ jobs:
     # ubuntu 환경에서 가장 최신 버전(latest)
     runs-on: ubuntu-latest
 
+    # Step : 특정 작업을 수행하는 가장 작은 단위
+    # Job은 여러 Step으로 구성되어 있다.
     steps:
       - name: Hello World 찍기
-        run: echo "Hello World!!!"
+        # run에 실제코드를 쓸 것이다.
+        run: echo "Hello World!!!" # 이거는 리눅스 코드다. echo는 출력 코드
+
+      - name: 여러 명령어 문장 작성하기
+        run: |
+          echo "Good"
+          echo "Morning"
